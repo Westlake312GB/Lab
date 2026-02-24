@@ -46,7 +46,7 @@ SELECT
     a.acc_isactive
 FROM 
     users u
-LEFT JOIN accounts a 
+RIGHT JOIN accounts a 
     ON u.user_id = a.user_id
 ORDER BY 
     u.user_id;
